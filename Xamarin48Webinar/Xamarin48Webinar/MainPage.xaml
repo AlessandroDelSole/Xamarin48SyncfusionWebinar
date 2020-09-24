@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Xamarin48Webinar.MainPage" Padding="0,20,0,0">
+
+    <StackLayout>
+
+        <Button Text="Brushes demo" x:Name="BrushesButton" Clicked="BrushesButton_Clicked"
+                Margin="20" BackgroundColor="Red" TextColor="Blue" FontAttributes="Bold"
+                FontSize="Large"/>
+
+        <Button Text="Shapes demo" x:Name="ShapesButton" Clicked="ShapesButton_Clicked"
+                Margin="20"/>
+        
+        <Button Text="IndicatorView demo" x:Name="IndiViewButton" Clicked="IndiViewButton_Clicked"
+                Margin="20"/>
+
+        <Button Text="Expander demo" x:Name="ExpanderButton" Clicked="ExpanderButton_Clicked"
+                Margin="20"/>
+
+        <Button Text="MediaElement demo" x:Name="MediaButton" Clicked="MediaButton_Clicked"
+                Margin="20"/>
+    </StackLayout>
+
+</ContentPage>

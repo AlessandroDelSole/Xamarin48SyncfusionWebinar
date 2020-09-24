@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Xamarin48Webinar.ExpanderPage">
+    <ContentPage.Content>
+        <ScrollView>
+            <Grid Margin="50">
+                <!-- Use IsExpanded to detect the status, Tapped to control interaction-->
+                <Expander>
+                    <Expander.Header>
+                        <ContentView>
+                            <StackLayout Orientation="Horizontal">
+                                <Label Text="Discover the Maldives" FontAttributes="Bold" FontSize="24" />
+
+                                <!-- You can add an image/icon here -->
+                            </StackLayout>
+                        </ContentView>
+                    </Expander.Header>
+
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition />
+                            <RowDefinition Height="Auto"/>
+                        </Grid.RowDefinitions>
+
+                        <Image Source="Maldives.jpg" />
+                        <Label Grid.Row="1"
+                        Text="The Maldives, officially the Republic of Maldives, is a small island nation in South Asia, situated in the Arabian Sea of the Indian Ocean. It lies southwest of Sri Lanka and India, about 700 kilometres (430 mi) from the Asian continent's mainland. The chain of 26 atolls stretches from Ihavandhippolhu Atoll in the north to Addu Atoll in the south to the equator. Comprising a territory spanning roughly 298 square kilometres (115 sq mi), the Maldives is one of the world's most geographically dispersed sovereign states as well as the smallest Asian country by land area and population, with around 515,696 inhabitants. Malé is the capital and the most populated city, traditionally called the King's Island where the ancient royal dynasties ruled for its central location"/>
+                    </Grid>
+                </Expander>
+            </Grid>
+        </ScrollView>
+
+    </ContentPage.Content>
+</ContentPage>

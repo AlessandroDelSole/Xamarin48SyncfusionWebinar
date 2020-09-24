@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Xamarin48Webinar.Brushes">
+    <ContentPage.Content>
+        <Grid>
+            <Frame CornerRadius="5" 
+                   Margin="20" WidthRequest="150" 
+                   HeightRequest="150">
+                <Frame.Background>
+                    <SolidColorBrush Color="Green"/>
+                </Frame.Background>
+            </Frame>
+
+            <Frame CornerRadius="5" 
+                   Margin="20" WidthRequest="150" 
+                   HeightRequest="150">
+                <Frame.Background>
+                    <LinearGradientBrush EndPoint="1,0">
+                        <GradientStop Color="Blue"
+                          Offset="0.1" />
+                        <GradientStop Color="Violet"
+                          Offset="0.5" />
+                        <GradientStop Color="Red"
+                          Offset="1.0" />
+                    </LinearGradientBrush>
+                </Frame.Background>
+            </Frame>
+
+            <Frame CornerRadius="5" 
+                   Margin="20" WidthRequest="150" 
+                   HeightRequest="150">
+                <Frame.Background>
+                    <RadialGradientBrush>
+                        <GradientStop Color="Blue"
+                          Offset="0.1" />
+                        <GradientStop Color="Violet"
+                          Offset="1.0" />
+                    </RadialGradientBrush>
+                </Frame.Background>
+            </Frame>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

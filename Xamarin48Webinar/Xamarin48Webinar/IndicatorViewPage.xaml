@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Xamarin48Webinar.IndicatorViewPage" Padding="0,20,0,0">
+    <ContentPage.Content>
+        <StackLayout Orientation="Vertical" VerticalOptions="Center" Margin="50">
+            <CarouselView x:Name="ProductList" ItemsSource="{Binding Products}" 
+                              CurrentItemChanged="ProductList_CurrentItemChanged" 
+                              PositionChanged="ProductList_PositionChanged"
+                              IndicatorView="ProductIndicatorView"
+                              CurrentItem="{Binding SelectedProduct}">
+                <CarouselView.ItemsLayout>
+                    <LinearItemsLayout Orientation="Horizontal"
+                         SnapPointsAlignment="Center"
+                         SnapPointsType="Mandatory"/>
+                </CarouselView.ItemsLayout>
+                <CarouselView.ItemTemplate>
+                    <DataTemplate>
+                        <StackLayout Margin="10">
+                            <Label Text="{Binding ProductName}" FontSize="24"/>
+                            <Image Source="{Binding ProductImage}" />
+                            <Label Text="{Binding QuantityIndicator}"/>
+                        </StackLayout>
+                    </DataTemplate>
+                </CarouselView.ItemTemplate>
+            </CarouselView>
+            <IndicatorView x:Name="ProductIndicatorView" IndicatorsShape="Circle"
+                   HorizontalOptions="Center" IndicatorColor="Violet" 
+                           SelectedIndicatorColor="Blue"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
